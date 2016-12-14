@@ -8,10 +8,10 @@
 
 
 ;; Used packages
-(prelude-require-packages '(smex ido-ubiquitous markdown-toc markdown-mode+ flymd))
+(prelude-require-packages '(smex ido-ubiquitous markdown-toc markdown-mode+ flymd clojure-mode-extra-font-locking paredit rainbow-delimiters))
 
 ;; Set a better default font
-(set-default-font "Courier New-13")
+(set-default-font "Courier New-12")
 
 
 ;; Make projectile igore .gitignored files
