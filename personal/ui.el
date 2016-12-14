@@ -20,7 +20,7 @@
   (scroll-bar-mode -1))
 
 ;; Color Themes
-(load-theme 'tango-dark t)
+(load-theme 'tangotango t)
 
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 140)
