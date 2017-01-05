@@ -8,7 +8,7 @@
 (menu-bar-mode -1)
 
 ;; Show line numbers
-(global-linum-mode)
+(global-linum-mode t)
 
 ;; You can uncomment this to remove the graphical toolbar at the top. After
 ;; awhile, you won't need the toolbar.
@@ -20,7 +20,7 @@
   (scroll-bar-mode -1))
 
 ;; Color Themes
-(load-theme 'tangotango t)
+(load-theme 'monokai t)
 
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 140)
@@ -61,3 +61,11 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+
+;; remove line number
+(defun nolinum ()
+  (global-linum-mode 0)
+  (linum-mode 0)
+  )
+(add-hook 'org-mode-hook 'nolinum)

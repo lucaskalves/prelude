@@ -35,6 +35,8 @@
 (require 'cl)
 (require 'package)
 
+(setq dotspacemacs-elpa-https nil)
+
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 ;; set package-user-dir to be relative to Prelude install path
